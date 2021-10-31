@@ -51,7 +51,7 @@ func main() {
 	println("Both keys saved as pem files")
 
 	pubKeyB64 := base64.StdEncoding.EncodeToString(pubKeyString)
-	askToCopy("Enter to copy public key to clipboard or enter \"n\" to skip:", pubKeyB64)
+	askToCopy("Enter to copy public key (as base64) to clipboard or enter \"n\" to skip:", pubKeyB64)
 	privKeyB64 := base64.StdEncoding.EncodeToString(privKeyString)
-	askToCopy("Enter to copy private key to clipboard or enter \"n\" to skip:", privKeyB64)
+	askToCopy("Enter to copy private key (as base64) to clipboard or enter \"n\" to skip:", privKeyB64)
 }
